@@ -1,16 +1,15 @@
 import React from "react";
 
-function Emoji (){
+function Emoji (attr){
     return <div className="term">
     <dt>
       <span className="emoji" role="img" aria-label="Tense Biceps">
-        💪
+        {attr.emoji}
       </span>
-      <span>Tense Biceps</span>
+      <span>{attr.emojiName}</span>
     </dt>
     <dd>
-      “You can do that!” or “I feel strong!” Arm with tense biceps. Also
-      used in connection with doing sports, e.g. at the gym.
+    {attr.description}
     </dd>
   </div>
 }
